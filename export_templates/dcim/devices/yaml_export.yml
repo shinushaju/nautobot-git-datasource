@@ -1,0 +1,9 @@
+---
+{% for device in queryset %}
+{% if device.status %}
+- {{ device.name }}:
+  site: {{ device.site }}
+  location: {{ device.location }}
+{% endif %}
+{% endfor %}
+...
