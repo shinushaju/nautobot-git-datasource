@@ -4,6 +4,8 @@
 - {{ device.name }}:
   site: {{ device.site }}
   location: {{ device.location }}
+  type: {{ device.device_type }}
+  role: {{ device.role }}
 {% endif %}
 {% endfor %}
 ...
