@@ -20,11 +20,10 @@ def normalize(query_set):
     """
     list_of_names = []
     for element in query_set:
-        logger.debug(dir(element))
         if hasattr(element, "name"):
             list_of_names.append(element.name)
         else:
-            list_of_names.append(element.slug)
+            list_of_names.append(element.natural_slug)
     return ', '.join(list_of_names)
 
 
