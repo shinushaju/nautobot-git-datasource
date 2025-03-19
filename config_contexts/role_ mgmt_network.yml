@@ -1,0 +1,6 @@
+---
+_metadata:
+  name: Management Network Role Settings
+  weight: 750
+  description: Settings for devices with the mgmt-network role.
+  is_active: true
